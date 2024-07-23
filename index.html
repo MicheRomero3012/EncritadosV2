@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/michi.png">
+    <link rel="stylesheet" href = "style.css">
+    <title>Encriptador | Miche R.</title>
+</head>
+<body>
+    <header class = "header">
+        <img src = "assets/Alura.png"  alt = "Logotipo de Alura Latam" class = "logotipoAlura">
+        <h1 class = "titulo__header">Encriptador de mensajes</h1>
+    </header>
+
+    <main class = "main">
+        <section class="seccion__entrada">
+            <div class="div__entrada__texto">
+                <textarea  onclick="limpiar();" class="entrada__texto" type="text" id="texto"> Ingrese un mensaje aquí. </textarea>
+                <p class="mensaje__advertencia">Solo letras minúsculas y sin acentos.</p>
+            </div>
+            <div class="div__botones">
+                <button class="boton__encriptar" id="encriptar">Encriptar</button>
+                <button class="boton__desencriptar" id="desencriptar">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="seccion__salida">
+            <div class="seccion__sin__texto">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>Ingresa el mensaje que deseas encriptar o desencriptar.</p>
+            </div>
+            <div class="seccion__con__texto">
+                <div class="seccion__con__texto__estilos">
+                    <div class = "mensaje__encriptado" id="mensajeFinal"></div>
+                    <button onclick="copiar()" class="boton__copiar" id="copiar">Copiar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class = "footer">
+        <p class="autor__footer">Desarrollado por: Brian Michelle Romero Flores</p>
+        <div class="redes">
+            <a href = "https://www.linkedin.com/in/brian-michelle-romero-flores-335251315/">
+                <img src = "assets/linkedin.png" class = "redes__sociales"></a>
+            <a href = "https://github.com/MicheRomero3012">
+                <img src = "assets/github.png" class = "redes__sociales"></a>
+            <a href = "https://www.instagram.com/miche_rof/">
+                <img src = "assets/instagram.png" class = "redes__sociales"></a>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
